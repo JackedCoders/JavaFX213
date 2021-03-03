@@ -7,7 +7,7 @@
  *
  * @author Manveer Singh, Prasish Sriram
  */
-package sample;
+package view;
 
 public class Profile {
     private String name; // employee’s name in the form “lastname,firstname”
