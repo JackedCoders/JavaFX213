@@ -2,7 +2,7 @@
  * Date class that contains all of the valid information about date time frame(month/day/year). The class allows us to calculate if a certain date is in a leap year, valid/invalid formats, if the month to days information is valid along with a toString method that returns the date in MM/DD/YYYY format. One of the best uses of this class is the isValid() method that tests for leap years, invalid inputs, etc
  * @author Manveer Singh, Prasish Sriram
  */
-package sample;
+package view;
 
 import java.util.Calendar;
 

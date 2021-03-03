@@ -2,7 +2,7 @@
  * Fulltime class is a subclass of Employee class and contains several different operations and data specific to a full-time employee. Fulltime class inherits some of its method from the Employee class and uses it to calculate payments, check if two full time employees are equal to one another along with returning annual salary for a fulltime employee. 
  * @author Manveer Singh, Prasish Sriram
  */
-package sample;
+package view;
 
 public class Fulltime extends Employee {
 

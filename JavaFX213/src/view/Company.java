@@ -10,7 +10,7 @@
  *
  * @author Manveer Singh, Prasidh Sriram
  */
-package sample;
+package view;
 
 public class Company {
     private Employee[] emplist;

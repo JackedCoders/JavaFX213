@@ -3,7 +3,7 @@
  * Class also returns part time employee's compensation along with any extra pay, hours worked. 
  * @author Manveer Singh, Prasish Sriram
  */
-package sample;
+package view;
 
 public class Parttime extends Employee {
 
