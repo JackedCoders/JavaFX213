@@ -3,7 +3,7 @@
  * @author Manveer Singh, Prasish Sriram
  */
 
-package pkg;
+package sample;
 
 public class Management extends Fulltime {
 
