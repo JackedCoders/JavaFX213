@@ -6,6 +6,8 @@ package sample;
 
 public class Fulltime extends Employee {
 
+    private double salary;
+
     /**
      * Constructor that calls the constructor in Employee class and sets the
      * parameters fulltimeProfile and payRate
