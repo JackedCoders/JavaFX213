@@ -20,6 +20,7 @@ public class Parttime extends Employee {
     public Parttime(Profile parttimeProfile, Double payRate) {
         super(parttimeProfile, payRate);
         this.hoursWorked = 0;
+        this.payRate = payRate;
     }
 
     /**
