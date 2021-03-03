@@ -8,6 +8,7 @@ package sample;
 public class Parttime extends Employee {
 
     private int hoursWorked; // Hours worked this period
+    private double payRate; // Pay rate per hour
 
     /**
      * Constructor that calls the constructor in super class Emloyee and assigns
