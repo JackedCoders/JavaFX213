@@ -16,9 +16,10 @@ public class Fulltime extends Employee {
      * @param payRate         amount that the employee gets paid (type double)
      *
      */
-    public Fulltime(Profile fulltimeProfile, Double payRate) {
+    public Fulltime(Profile fulltimeProfile, Double salary) {
 
-        super(fulltimeProfile, payRate);
+        super(fulltimeProfile, salary);
+        this.salary = salary;
     }
 
     /**
@@ -52,7 +53,7 @@ public class Fulltime extends Employee {
     }
 
     public double getPayRate(){
-        return super.getPayRate();
+        return this.salary;
     }
 
     /**

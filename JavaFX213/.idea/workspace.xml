@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Company.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Date.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Fulltime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Fulltime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Management.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Management.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Parttime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Parttime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Profile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Profile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Fulltime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Fulltime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Main.java" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Parttime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Parttime.java" afterDir="false" />
->>>>>>> parent of 8c94acf... GUI
+      <change beforePath="$PROJECT_DIR$/src/view/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +152,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -190,6 +177,20 @@
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Main" />
+      <module name="JavaFX213" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
@@ -244,6 +245,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

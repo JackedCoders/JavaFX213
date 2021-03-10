@@ -1,3 +1,8 @@
+/**
+ * Main class for our project, creates the stage and the anchorPane. The class also contains the main method and runs
+ * the view.fxml file.
+ * @author Manveer Singh, Prasidh S
+ */
 package view;
 
 import javafx.application.Application;
@@ -10,10 +15,14 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("view.fxml"));
-        primaryStage.setTitle("Payroll Processing System");
-        primaryStage.setScene(new Scene(root, 1600, 1000));
-        primaryStage.show();
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("view.fxml"));
+            primaryStage.setTitle("Payroll Processing");
+            primaryStage.setScene(new Scene(root, 800, 600));
+            primaryStage.show();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 
