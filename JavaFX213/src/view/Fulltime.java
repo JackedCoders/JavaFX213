@@ -8,6 +8,12 @@ public class Fulltime extends Employee {
 
     private double salary;
 
+    public void setSalary(double salary){ this.salary = salary; }
+
+    public double getSalary(){
+        return this.salary;
+    }
+
     /**
      * Constructor that calls the constructor in Employee class and sets the
      * parameters fulltimeProfile and payRate
@@ -18,7 +24,7 @@ public class Fulltime extends Employee {
      */
     public Fulltime(Profile fulltimeProfile, Double salary) {
 
-        super(fulltimeProfile, salary);
+        super(fulltimeProfile);
         this.salary = salary;
     }
 
@@ -28,8 +34,8 @@ public class Fulltime extends Employee {
      */
     @Override
     public void calculatePayment() {
-        final int PAYPERIODS = 26;
-        super.setPayments(super.getPayRate() / PAYPERIODS);
+        final int PAY_PERIODS = 26;
+        super.setPayments(this.salary / PAY_PERIODS);
     }
 
     /**
@@ -74,7 +80,7 @@ public class Fulltime extends Employee {
      */
     @Override
     public String toString() {
-        return super.toString() + "FULL TIME::Annual Salary $" + super.getPayRate();
+        return super.toString() + "FULL TIME::Annual Salary $" + this.salary;
     }
 
     /**

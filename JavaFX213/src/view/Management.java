@@ -17,14 +17,14 @@ public class Management extends Fulltime {
      * variable managementCode to the parameter (managerType) being passed in
      *
      * @param managerProfile
-     * @param payRate
+     * @param managerSalary
      * @param managerType    either 1 (Manager),2(Department head) or 3 (director).
      *                       this parameters allows us to properly assign bonuses
      *
      */
-    public Management(Profile managerProfile, Double payRate, int managerType) {
+    public Management(Profile managerProfile, Double managerSalary, int managerType) {
 
-        super(managerProfile, payRate);
+        super(managerProfile, managerSalary);
         this.managementCode = managerType;
 
         int payPeriods = 26; // # of biweekly payment periods per year

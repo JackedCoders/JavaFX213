@@ -11,7 +11,7 @@ import java.text.*;
 public class Employee {
 
     private Profile employeeProfile;
-    private Double payRate;
+    //private Double payRate;
     private Double payments;
 
     /**
@@ -59,9 +59,9 @@ public class Employee {
      *
      * @return payRate
      */
-    public double getPayRate() {
-        return this.payRate;
-    }
+    //public double getPayRate() {
+        //return this.payRate;
+    //}
 
     /**
      * setter method that initializes the parameter payRate to the instance variable
@@ -71,9 +71,9 @@ public class Employee {
      *                this method and allows us to initiaize it to instance variable
      *                payRate of this class
      */
-    public void setPayRate(double payRate) {
-        this.payRate = payRate;
-    }
+    //public void setPayRate(double payRate) {
+        //this.payRate = payRate;
+    //}
 
     /**
      * empty method that gets overriden by all of the subclasses (partime, fulltime,
@@ -91,9 +91,9 @@ public class Employee {
      * @param employeeProfile that gets passed when invoked
      * @param payRate         that gets passed when invoked
      */
-    public Employee(Profile employeeProfile, Double payRate) {
+    public Employee(Profile employeeProfile) {
         this.employeeProfile = employeeProfile;
-        this.payRate = payRate;
+        //this.payRate = payRate;
         this.payments = (double) 0;
     }
 

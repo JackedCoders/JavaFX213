@@ -10,6 +10,12 @@ public class Parttime extends Employee {
     private int hoursWorked; // Hours worked this period
     private double payRate; // Pay rate per hour
 
+    public void setPayRate(double payRate) { this.payRate = payRate; }
+
+    public double getPayRate() {
+        return payRate;
+    }
+
     /**
      * Constructor that calls the constructor in super class Emloyee and assigns
      * parttimeProfile and payRate along with initializing hoursWorked to 0.
@@ -18,7 +24,7 @@ public class Parttime extends Employee {
      * @param payRate         part time pay rate
      */
     public Parttime(Profile parttimeProfile, Double payRate) {
-        super(parttimeProfile, payRate);
+        super(parttimeProfile);
         this.hoursWorked = 0;
         this.payRate = payRate;
     }
@@ -44,13 +50,13 @@ public class Parttime extends Employee {
         final double OVERTIME_COMPENSATION = 1.5;
         if (hoursWorked <= MAX_REGULAR_HOURS) {
 
-            super.setPayments(hoursWorked * super.getPayRate());
+            super.setPayments(hoursWorked * this.payRate);
         } else {
             int overtimeHours = hoursWorked - MAX_REGULAR_HOURS;
             hoursWorked -= MAX_REGULAR_HOURS;
 
             super.setPayments(
-                    (hoursWorked * super.getPayRate()) + (overtimeHours * super.getPayRate() * OVERTIME_COMPENSATION));
+                    (hoursWorked * this.payRate) + (overtimeHours * this.payRate * OVERTIME_COMPENSATION));
         }
     }
 
@@ -64,7 +70,7 @@ public class Parttime extends Employee {
      */
     @Override
     public String toString() {
-        return super.toString() + "PART TIME::Hourly Rate $" + super.getPayRate() + "::Hours worked this period: "
+        return super.toString() + "PART TIME::Hourly Rate $" + getPayRate() + "::Hours worked this period: "
                 + hoursWorked;
     }
 
