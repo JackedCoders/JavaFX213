@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Fulltime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Fulltime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Management.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Management.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Parttime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Parttime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaFX213.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFX213.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Company.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Date.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Fulltime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Fulltime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Management.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Management.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Parttime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Parttime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/Profile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/Profile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFX213/view/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX213/view/view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,12 +156,12 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -193,9 +202,9 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <option name="MAIN_CLASS_NAME" value="view.Main" />
       <module name="JavaFX213" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/Downloads/javafx-sdk-15.0.1/lib --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -247,7 +256,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
