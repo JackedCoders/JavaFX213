@@ -19,7 +19,7 @@ public class Fulltime extends Employee {
      * parameters fulltimeProfile and payRate
      *
      * @param fulltimeProfile basic data info of a fullTime Employee
-     * @param payRate         amount that the employee gets paid (type double)
+     * @param salary         amount that the employee gets paid (type double)
      *
      */
     public Fulltime(Profile fulltimeProfile, Double salary) {
