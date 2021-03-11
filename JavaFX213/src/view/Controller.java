@@ -7,5 +7,8 @@ package view;
 
 public class Controller {
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of c61aac7... Update Controller.java
 }
