@@ -17,8 +17,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         try {
             Parent root = FXMLLoader.load(getClass().getResource("view.fxml"));
-            primaryStage.setTitle("Payroll Processing");
-            primaryStage.setScene(new Scene(root, 800, 600));
+            primaryStage.setTitle("Payroll Processing System");
+            primaryStage.setScene(new Scene(root, 890, 616));
             primaryStage.show();
         } catch (Exception e){
             e.printStackTrace();
@@ -30,3 +30,4 @@ public class Main extends Application {
         launch(args);
     }
 }
+
