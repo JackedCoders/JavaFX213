@@ -1,3 +1,4 @@
+package view;
 /**
  * Array based container class that holds that array emplist and implements the
  * entire employee database. The array emplist in this class contains instances
@@ -10,8 +11,6 @@
  *
  * @author Manveer Singh, Prasidh Sriram
  */
-package view;
-
 public class Company {
     private Employee[] emplist;
     private int numEmployees;
@@ -156,19 +155,16 @@ public class Company {
                     Parttime newParttime = (Parttime) emplist[i];
                     newParttime.calculatePayment();
                     emplist[i] = newParttime;
-
                 }
                 if(emplist[i] instanceof Fulltime){
                     Fulltime newFulltime = (Fulltime) emplist[i];
                     newFulltime.calculatePayment();
                     emplist[i] = newFulltime;
-
                 }
                 if(emplist[i] instanceof Management){
                     Management newManagement = (Management) emplist[i];
                     newManagement.calculatePayment();
                     emplist[i] = newManagement;
-
                 }
 
             }
@@ -180,17 +176,20 @@ public class Company {
      * prints the contents (last name, firstname, department, earnings) of emplist
      * array of type Employee using the .toString() method.
      */
-    public void print() {
+    public String [] print() {
         if (numEmployees == 0) {
             System.out.println("Employee database is empty.");
-            return;
+            return null;
         }
-        System.out.println("--Printing earning statements for all employees--");
-        for (int i = 0; i <= numEmployees; i++) {
+
+        String [] tokenList = new String[numEmployees+1];
+        tokenList[0] = "--Printing earning statements for all employees--";
+        for (int i = 1; i <= numEmployees; i++) {
             if (emplist[i] != null) {
-                System.out.println(emplist[i].toString());
+                tokenList[i] = emplist[i].toString();
             }
         }
+        return tokenList;
     }
 
     /**
@@ -201,10 +200,10 @@ public class Company {
      * again, as long as emplist[i] is not = null, we use the .toString method in
      * employee class to print the earnings statements
      */
-    public void printByDepartment() {
+    public String [] printByDepartment() {
         if (numEmployees == 0) {
             System.out.println("Employee database is empty.");
-            return;
+            return null;
         }
 
         // Sort emplist by department
@@ -218,12 +217,14 @@ public class Company {
             }
             emplist[j + 1] = key;
         }
-        System.out.println("--Printing earning statements by department--");
-        for (int i = 0; i <= numEmployees; i++) {
+        String [] tokenList = new String[numEmployees+1];
+        tokenList[0] = "--Printing earning statements by department--";
+        for (int i = 1; i <= numEmployees; i++) {
             if (emplist[i] != null) {
-                System.out.println(emplist[i].toString());
+                tokenList[i] = emplist[i].toString();
             }
         }
+        return tokenList;
     }
 
     /**
@@ -232,11 +233,12 @@ public class Company {
      * statement then using the same approach as in printByDepartment, we are able
      * to use a key of type Employee to compare the profile and dateHired in the
      * while loop and then another for loop prints out the earnings
+     * @return date tokens
      */
-    public void printByDate() {
+    public String [] printByDate() {
         if (numEmployees == 0) {
             System.out.println("Employee database is empty.");
-            return;
+            return null;
         }
 
         // Sort emplist by dateHired
@@ -250,14 +252,23 @@ public class Company {
             }
             emplist[j + 1] = key;
         }
-
-        System.out.println("--Printing earning statements by date hired--");
-        for (int i = 0; i <= numEmployees; i++) {
+        String [] tokenList = new String[numEmployees+1];
+        tokenList[0] = "--Printing earning statements by date hired--";
+        for (int i = 1; i <= numEmployees; i++) {
             if (emplist[i] != null) {
-                System.out.println(emplist[i].toString());
+                tokenList[i] = emplist[i].toString();
             }
         }
-
+        return tokenList;
     }
 
+
+    /**
+     *This method uses the print() in this class (which returns an array of Strings) and we use it to print the information
+     * in our database and invoke it in controller class which lets us export the file.
+     * @return an array of strings to controller class that we split up and export files to
+     */
+    public String[] exportDatabase(){
+        return print();
+    }
 }
